@@ -54,17 +54,41 @@ nav {
     width: 100%;
     position: fixed;
     background: white;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 10px;
   
 }
 
 .navbar {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
 
 .left-icons {
+    margin-left: 10px;
     display: flex;
+    width: 250px;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.cta-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: 0;
+    background-color: #567b95;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-right: 10px;
 }
 
 .wrapper {
@@ -174,6 +198,7 @@ nav {
 .articles {
     display: grid;
     grid-template-areas: 
+       
         "more   more    text-links"
         "more   more    text-links"
         "editor editor  text-links";
@@ -190,7 +215,7 @@ nav {
 }
 
 .articles a:hover {
-    font-weight: bold;
+    color: gray;
 }
 
 .more {
@@ -199,6 +224,18 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+.more-header, .text-header {
+    flex-basis: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-top: 1px solid black;
+    padding: 15px 0;
+
+
+}
+
+
 
 .more-links, .editor-links {
     max-width: 275px;
@@ -222,6 +259,8 @@ nav {
 
     font-weight: 100;
     font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
     
 }
 
@@ -260,7 +299,6 @@ nav {
 }
 
 .links {
-    border: 2px solid salmon;
     height: 500px;
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
@@ -278,6 +316,7 @@ nav {
 .big-links-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    margin: 20px 50px;
 }
 
 .big-links-container h3 {
@@ -290,6 +329,15 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.big-links-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    margin: 0 50px;
+    padding-top: 10px;
+    border-top: 4px double gray;
+}
+
 .link-column {
     display: flex;
     flex-direction: column;
@@ -297,6 +345,11 @@ nav {
 
 .link-column > * {
     display: block;
+}
+
+#sub-links a {
+    font-weight: bold; 
+    line-height: 25px;
 }
 
 
