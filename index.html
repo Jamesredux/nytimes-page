@@ -7,15 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <nav>
+      <div class="navbar">
+          <div class="left-icons">
+              <div class="hamburger"><i class="fas fa-bars"></i></div>
+              <div class="magnif"><i class="fas fa-search"></i></div>
+              <div class="">
+                  <p>Space & Cosmos</p>
+              </div>
+          </div>
+
+
+          <div class="title">
+              <h1>The New York Times</h1>
+          </div>
+
+          <div class="cta-buttons">
+              <button>Subscribe</button>
+              <button>Log in</button>
+          </div>
+      </div>  
 
     </nav>
+
     <section class="wrapper">
         <div class="content">
            
             <h1>Space Ripples Reveal Big Bang's Smoking Gun</h1>
             
             <img src="images/main1.jpg" alt="Alun Guth">
+
+            <p>By Dennis Overbye</p>
+            <div class="topline"><span>March 17, 2014</span><span>Social Links</span></div>
 
             <p>CAMBRIDGE, Mass. — One night late in 1979, an itinerant young physicist named Alan Guth, with a new son and a year’s appointment at Stanford, stayed up late with his notebook and equations, venturing far beyond the world of known physics.
 
@@ -55,7 +79,7 @@
                     boiling over.
             </p>
 
-            <h3>
+            <h3 class="quote">
                 ‘As Big as It Gets’
             </h3>
 
@@ -78,9 +102,53 @@
                  Polarization, reported their results in a scientific briefing at the Center for Astrophysics here on Monday and in a set
                   of papers submitted to The Astrophysical Journal.
             </p>
+            <div class="inflation">
+            <div class="inflation-grid">
+                <div class="inflation-paras para1">
+                    <p><b>THE UNIVERSE</b> is just under 14 billion years old. From our position 
+                        in the Milky Way galaxy, we can observe a sphere that
+                         is now about 92 billion light-years across. 
+                         But there's a mystery. Wherever we look, the universe has an even temperature.</p>
+                    <P><b>NOT ENOUGH TIME</b> The universe is not old enough for light to 
+                        have traveled the vast distance from one side of the universe to the other, 
+                        and there has not been enough time for 
+                        scattered patches of hot and cold to mix into an even temperature.</P>     
+                    <p><b>DISTANT COFFEE</b> At a smaller scale, imagine using a telescope to 
+                        look a mile in one direction. You see a coffee cup, and from the amount of steam,
+                        you can estimate its temperature and how much it has cooled. </p>   
+                    <P><b>COFFEE EVERYWHERE</b> Now turn around and look a mile in the other 
+                        direction. You see a similar coffee cup, at exactly the same temperature.
+                         Coincidence? Maybe. But if you see a similar cup in every direction, 
+                        you might want to look for another explanation.</P>     
+                </div>
+                
+                <div class="inflation-paras para2">
+                    <p><b>STILL NOT ENOUGH TIME</b> There has not been enough time to carry coffee
+                         cups from place to place before they get cold. But if all the coffee cups 
+                         were somehow filled from a single coffee pot,
+                         all at the same time, that might explain their even temperature.</p>
 
-            <img src="images/main2.png" alt="diagram" class="inflation">
+                    <p><b>INFLATION</b> solves this problem. The theory proposes that, less than a 
+                        trillionth of a second after the Big Bang, the universe expanded faster than 
+                        the speed of light. Tiny ripples in the violently expanding energy 
+                        field eventually grew into the large-scale structures of the universe.</p>   
+                        
+                    <p><b>FLUCTUATION</b>  Astronomers have now detected evidence of these ancient 
+                        fluctuations in swirls of polarized light in the cosmic background radiation, 
+                        which is energy left over from the early universe. 
+                        These are gravitational waves predicted by Einstein.</p>    
 
+                    <p><b>EXPANSION</b> Returning to our coffee, imagine a single, central pot expanding
+                         faster than light and cooling to an even temperature as it expands.
+                          That is something like inflation.
+                         And the structure of the universe mirrors the froth and foam of the original pot.</p>    
+
+                </div>
+
+           
+            </div>
+            
+            </div>    
             <p>
                 Dr. Kovac said the chance that the results were a fluke was only one in 10 million.
 
@@ -124,7 +192,7 @@
                 Corroboration might not be long in coming. The Planck spacecraft will report its own findings this year. At least a dozen other teams are trying similar measurements from balloons, mountaintops and space.  
             </p>
 
-            <h3>Spirals in the Sky</h3>
+            <h3 class="quote">Spirals in the Sky</h3>
 
             <p>
                 Gravity waves are the latest and deepest secret yet pried out of the cosmic microwaves, which were discovered accidentally by Arno Penzias and Robert Wilson at Bell Labs 50 years ago. They won the Nobel Prize.
@@ -134,7 +202,7 @@
                 “The South Pole is the closest you can get to space and still be on the ground,” Dr. Kovac said. He has been there 23 times, he said, wintering over in 1994. “I’ve been hooked ever since,” he said.
             </p>
 
-            <img src="images/main3.jpg" alt="dish">
+            <img class="small" src="images/main3.jpg" alt="dish">
 
             <p>
                 In 2002, he was part of a team that discovered that the microwave radiation was polarized, meaning the light waves had a slight preference to vibrate in one direction rather than another.
@@ -150,7 +218,7 @@
 
             </p>
 
-            <h3>A Special Time</h3>
+            <h3 class="quote">A Special Time</h3>
 
              <p>
                                     The data traced the onset of inflation to a time that physicists like Dr. Guth, staying up late in his Palo Alto house 35 years ago, suspected was a special break point in the evolution of the universe.
@@ -180,6 +248,13 @@
                     “If you trace your cosmic roots,” said Abraham Loeb, a Harvard-Smithsonian astronomer who was not part of the team, “you wind up at inflation.”
          </p>
 
+         <div class="footnote">
+             <p>A version of this article appears in print on March 18, 2014, 
+                 Section A, Page 1 of the New York edition with the headline: 
+                 Space Ripples Reveal Big Bang’s Smoking Gun.
+                  Order Reprints | Today’s Paper | Subscribe</p>
+         </div>
+
          
       </div>
 
@@ -189,72 +264,78 @@
                 <div class="more-links">
                     <div class="img-group">
                         <img src="images/more1.jpg" alt="moon">
-                        <p>pic details</p>
+                        
                     </div>
 
-                    <div>
-                        <p>link details</p>
-                        <p>date</p>
+                    <div class="pic-links-text">
+                        <p>pic details</p>
+                        <a href="">The Galaxy that Grew up Too Fast</a>
+                        <p>May 12</p>
                     </div>    
                 </div>
                 
                 <div class="more-links">
                     <div class="img-group">
                         <img src="images/more2.jpg" alt="moon">
-                        <p>pic details</p>
+                        
                     </div>
                         
-                    <div>
-                        <p>link details</p>
-                        <p>date</p>
+                    <div class="pic-links-text">
+                        <p>pic details</p>
+                        <a href="">NASA Names Dark Energy Telescope for Nancy Grace Roman</a>
+                        <p>May 18</p>
                     </div>    
                 </div>
                 
                 <div class="more-links">
                     <div class="img-group">
                         <img src="images/more3.jpg" alt="moon">
-                        <p>pic details</p>
+                        
                     </div>
                         
-                    <div>
-                        <p>link details</p>
-                        <p>date</p>
+                    <div class="pic-links-text">
+                        <p>pic details</p>
+                        <a href=""> Jupiter's Biggest Moons Started as Tiny Grains of Hail</a>
+                        <p>May 23</p>
                     </div>    
                 </div>
 
                 <div class="more-links">
                     <div class="img-group">
                         <img src="images/more4.png" alt="moon">
-                        <p>pic details</p>
+                        
                     </div>
                         
-                    <div>
-                        <p>link details</p>
-                        <p>date</p>
+                    <div class="pic-links-text">
+                        <p>pic details</p>
+                        <a href="">Following Comet SWAN</a>
+                        <p>May 10</p>
                     </div>    
                 </div>
 
                 <div class="more-links">
                     <div class="img-group">
                         <img src="images/more5.jpg" alt="moon">
-                        <p>pic details</p>
+                        
                     </div>
                         
-                    <div>
-                        <p>link details</p>
-                        <p>date</p>
+                    <div class="pic-links-text">
+                        <p>pic details</p>
+                        <a href="">A Black Hole's Boomerang</a>
+                        <p>May 17</p>
                     </div>    
                 </div>
 
                 <div class="more-links">
                     <div class="img-group">
                         <img src="images/more6.jpg" alt="moon">
-                        <p>pic details</p>
+                        
                     </div>
                         
-                    <div>
-                        <p>link details</p>
-                        <p>date</p>
+                    <div class="pic-links-text">
+                        <p>pic details</p>
+                        <a href="">A Nice Satellite</a>
+                        <p>May 18</p>
                     </div>    
                 </div>
             </div>
@@ -263,43 +344,46 @@
                 <div class="editor-links">
                     <div class="img-group">
                         <img src="images/editor1.jpg" alt="moon">
-                        <p>pic details</p>
+                        
                     </div>
 
-                    <div>
-                        <p>link details</p>
-                        <p>date</p>
+                    <div class="pic-links-text">
+                        <p>pic details</p>
+                        <a href="">How to Make Your House Look Amazing</a>
+                        <p>May 20</p>
                     </div>    
                 </div>
                 
                 <div class="editor-links">
                     <div class="img-group">
                         <img src="images/editor2.jpg" alt="moon">
-                        <p>pic details</p>
+                        
                     </div>
                         
-                    <div>
-                        <p>link details</p>
-                        <p>date</p>
+                    <div class="pic-links-text">
+                        <p>pic details</p>
+                        <a href="">Amazing Story of Courage</a>
+                        <p>May 19</p>
                     </div>    
                 </div>
                 
                 <div class="editor-links">
                     <div class="img-group">
                         <img src="images/editor3.jpg" alt="moon">
-                        <p>pic details</p>
+                        
                     </div>
                         
-                    <div>
-                        <p>link details</p>
-                        <p>date</p>
+                    <div class="pic-links-text">
+                        <p>pic details</p>
+                        <a href="">Elon Musk Talks about 'The Red Pill'</a>
+                        <p>May 18</p>
                     </div>    
                 </div>
 
             </div>
 
             <div class="text-links">
-                <h3>Most Popular</h3>
+                <h2>Most Popular</h2>
                 <div class="text-links-list">
                     <a href="#">As Tara Reade's Expert Witness Credentials Are Questioned, So Are Verticts</a>
 
@@ -318,14 +402,140 @@
         </div>
 
         <div class="links">
+            <div class="big-links">
+                <div class="big-links-header">
+
+                </div>
+
+                <div class="big-links-container">
+                    <div class="link-column col1">
+                       <h3>NEWS</h3>
+                        <a href="">Home Page</a>
+                        <a href="">World</a>
+                        <a href="">U.S</a>
+                        <a href="">Politics</a>
+                        <a href="">Election 2020</a>
+                        <a href="">New York</a>
+                        <a href="">Business</a>
+                        <a href="">Tech</a>
+                        <a href="">Science</a>
+                        <a href="">Sports</a>
+                        <a href="">Obituaries</a>
+                        <a href="">Today's Paper</a>
+                        <a href="">Corrections</a> 
+                    </div>
+
+                    <div class="link-column col2">
+                        <h3>OPINION</h3>
+                        <a href="">Today's Opinion</a>
+                        <a href="">Op-Ed Columnists</a>
+                        <a href="">Editorials</a>
+                        <a href="">Op-Ed Contributors</a>
+                        <a href="">Letters</a>
+                        <a href="">Sunday Review</a>
+                        <a href="">Video: Opinion</a>
+                       
+                    </div>
+
+                    <div class="link-column col3">
+                        <h3>ARTS</h3>
+                        <a href="">Today's Arts</a>
+                        <a href="">Art & Design</a>
+                        <a href="">Books</a>
+                        <a href="">Design</a>
+                        <a href="">Movies</a>
+                        <a href="">Music</a>
+                        <a href="">Pop Culture</a>
+                        <a href="">Television</a>
+                        <a href="">Theater</a>
+                        <a href="">Video: Arts</a>
+                    </div>
+
+                    <div class="link-column col4">
+                        <h3>LIVING</h3>
+                        <a href="">Automobiles</a>
+                        <a href="">Crossword</a>
+                        <a href="">Education</a>
+                        <a href="">Food</a>
+                        <a href="">Health</a>
+                        <a href="">Jobs</a>
+                        <a href="">Love</a>
+                        <a href="">Magazine</a>
+                        <a href="">Parenting</a>
+                        <a href="">Real Estate</a>
+                        <a href="">Recipes</a>
+                        <a href="">Style</a>
+                        <a href="">T Magazine</a>
+                        <a href="">Travel</a>
+                    </div>
+
+                    <div class="link-column col5">
+                        <h3>MORE</h3>
+                        <a href="">Reader Center</a>
+                        <a href="">Wirecutter</a>
+                        <a href="">Live Events</a>
+                        <a href="">The Learning Network</a>
+                        <a href="">Tools & Services</a>
+                        <a href="">N.Y.C Events Guide</a>
+                        <a href="">Multimedia</a>
+                        <a href="">Photography</a>
+                        <a href="">Video</a>
+                        <a href="">NYT Store</a>
+                        <a href="">Times Journeys</a>
+                        <a href="">Manage My Account</a>
+                    </div>
+
+                    <div class="link-column col6">
+                        <h3>SUBSCRIBE</h3>
+                        <div class="sub-links">
+                            <ul>
+                                <li><a href="">Home Delivery</a></li>
+                                <li><a href="">Digital Subscriptions</a></li>
+                                <li><a href="">Crossword</a></li>
+                                <li><a href="">Cooking</a></li>
+                            </ul> 
+                             
+                        </div>
+
+                        <div class="sub-small">
+                            <ul>
+                                <li><a href="">Email Newsletters</a></li>
+                                <li><a href="">Corporate Subscriptions</a></li>
+                                <li><a href="">Education Rate</a></li>
+                                <li><a href="">Mobile Applications</a></li>
+                                <li><a href="">Replica Edition</a></li>
+                                <li><a href="">Espanol</a> </li>
+                                <li><a href=""> CHINESE</a></li>
+                            </ul>
+                           
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-        <footer>
+        <footer class="footer">
+
+            <a href="">2020 New York Times</a>
+            <a href="">NYT co</a>
+            <a href="">Contact Us</a>
+            <a href="">Work with Us</a>
+            <a href="">Advertise</a>
+            <a href="">T Brand Studio</a>
+            <a href="">Your Ad Choices</a>
+            <a href="">Privacy</a>
+            <a href="">Terms of Service</a>
+            <a href="">Terms of Sale</a>
+            <a href="">Help</a>
+            <a href="">Subscriptions</a>
 
         </footer>
     </section>
 
     
 </body>
+
+<script src="https://kit.fontawesome.com/cace2cc9e8.js" crossorigin="anonymous"></script>
 </html>

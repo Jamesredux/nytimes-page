@@ -50,15 +50,24 @@ table {
 
 
 nav {
-    border: 2px solid brown;
     height: 50px;
     width: 100%;
     position: fixed;
+    background: white;
   
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left-icons {
+    display: flex;
+}
+
 .wrapper {
-    border: 2px solid red;
     padding-top: 60px;
     
 }
@@ -74,21 +83,91 @@ nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.25rem;
     line-height: 1.875rem;
+    padding: 20px 0;
 }
 
 .content h1 {
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 3rem;
+    padding:  30px 0;
+    font-style: italic;
 }
 .content img {
     display: grid;
 
     grid-column: 1 / -1;
-    max-width: 100%;
+    width: 100%;
+    max-width: 900px;
     height: auto;
     margin: 0 auto;
    
+}
+
+.content .small {
+    max-width: 600px;
+}
+
+.quote {
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.inflation {
+    grid-column: 1 / -1;
+    width: 945px;
+    height: 576px;
+    background-size: cover;
+    margin: 0 auto;
+    background-image: url(images/main2.png);
+}
+
+.inflation-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 144px );
+}
+
+.inflation-paras {
+    
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inflation-paras p {
+    width: 225px;
+}
+
+.inflation-paras b {
+    font-weight: 700;
+}
+
+.inflation-paras.para1 {
+    grid-row: 2/ 3;
+    display: flex;  
+    justify-content: space-between;
+
+}
+
+.inflation-paras.para2 {
+    grid-row: 4/ 5;
+    display: flex;  
+    justify-content: space-between;
+
+}
+
+.footnote {
+    font-size: .8rem;
+    font-weight: 300;
+    line-height: 0.8rem;
+    margin: 20px 0;
+}
+
+.topline {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -98,13 +177,20 @@ nav {
         "more   more    text-links"
         "more   more    text-links"
         "editor editor  text-links";
-    border: 3px solid chartreuse;
-    height: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .articles  img {
-    width: 230px;
-    height: 153px;
+    /* width: 230px; */
+    /* height: 153px; */
+    width: 100%;
+    height: auto;
+    color: #333;
+}
+
+.articles a:hover {
+    font-weight: bold;
 }
 
 .more {
@@ -114,16 +200,56 @@ nav {
     justify-content: space-between;
 }
 
+.more-links, .editor-links {
+    max-width: 275px;
+    min-width: 200px;
+}
 
+.pic-links-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.pic-links-text > p:first-of-type     {
+    align-self: flex-end;
+    right: 0;
+    font-weight: 100;
+    font-size: 10px;
+    
+}
+
+.pic-links-text > p:last-of-type     {
+
+    font-weight: 100;
+    font-size: 10px;
+    
+}
+
+.pic-links-text > a {
+    color: #333;
+    text-decoration: none;
+    line-height: 1.44rem;
+    /* font-weight: 500;  */
+}
 
 .text-links {
     grid-area: text-links;
+    max-width: 315px;
+    margin-left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .text-links-list > a {
+    color: #333;
+    border-top: 1px solid gray;
     display: block;
     padding: 10px;
+    text-decoration: none;
+    font-size: 1.18rem;
+    line-height: 1.44rem;
+    font-weight: 500;
 }
+
 
 .editor {
     
@@ -136,11 +262,63 @@ nav {
 .links {
     border: 2px solid salmon;
     height: 500px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+    height: 23px;
+    line-height: 16px;
+}
+
+.big-links-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.big-links-container h3 {
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 700;
+    height: 25px;
+    width: 150px;
+    line-height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-column > * {
+    display: block;
 }
 
 
 
 footer {
-    border: 2px solid coral;
-    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 80px;
+    margin-bottom: 60px;
+    
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+
+footer a {
+    color: grey;
+    text-decoration: none;
+    
+}
+
+.footer a:hover, .links a:hover {
+    text-decoration: underline;
 }
