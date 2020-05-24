@@ -2,4 +2,4 @@
 
 Copy of New York Times as part of the odin project 
 HTML and CSS project.
-to do, tidy stuff up. Add social buttons and comments button
+https://www.theodinproject.com/courses/html-and-css/lessons/positioning-and-floating-elements
